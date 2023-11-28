@@ -57,7 +57,9 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) => {
                   alt={product.title}
                 />
               </div>
-              <p className="text-center font-mono text-gray-400 text-sm mt-2">{product.producer}</p>
+              <p className="text-center font-mono text-gray-400 text-sm mt-2">
+                {product.producer}
+              </p>
             </div>
           ))}
         </div>
