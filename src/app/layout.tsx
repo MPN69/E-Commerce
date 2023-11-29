@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/page";
 import Products from "@/components/products/page";
 import Home from "./page";
+import Footer from "@/components/footer/Footer";
 
 export default function RootLayout({
   children,
@@ -21,7 +22,7 @@ export default function RootLayout({
           <Home />
           <Products />
         </main>
-        <footer>[footer]</footer>
+        <footer><Footer /></footer>
       </body>
     </html>
   );

@@ -26,7 +26,7 @@ const Products = () => {
           onClick={() => handleOpenProduct(product)}
         >
           <img
-            className="w-full h-auto bottom-2 items-center"
+            className="w-full h-auto bottom-2 justify-center"
             src={product.img}
             alt={product.title}
           />
@@ -37,12 +37,16 @@ const Products = () => {
             <p className="text-start font-bold font-serif mt-1">
               Precio: {product.price}
             </p>
-            <div className="flex flex-row gap-1 mt-2">
-              <img src="./star.svg" alt="Star Rate" className="w-4" />
-              <img src="./star.svg" alt="Star Rate" className="w-4" />
-              <img src="./star.svg" alt="Star Rate" className="w-4" />
-              <img src="./star.svg" alt="Star Rate" className="w-4" />
-              <img src="./grayStar.svg" alt="Star Rate" className="w-4" />
+            <div className="flex flex-row gap-1 mt-2 h-6 w-3/4">
+              <img src="./star.svg" alt="Star Rate" className="h-full w-1/6" />
+              <img src="./star.svg" alt="Star Rate" className="h-full w-1/6" />
+              <img src="./star.svg" alt="Star Rate" className="h-full w-1/6" />
+              <img src="./star.svg" alt="Star Rate" className="h-full w-1/6" />
+              <img
+                src="./grayStar.svg"
+                alt="Star Rate"
+                className="h-full w-1/6"
+              />
               <p className="text-gray-500 font-serif">({product.producer})</p>
             </div>
           </div>
