@@ -43,7 +43,7 @@ const Footer = () => {
             <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
               CONOCENOS
             </h2>
-            <nav className="list-none mb-10">
+            <ul className="list-none mb-10">
               <li>
                 <a className="text-gray-400 hover:text-white">First Link</a>
               </li>
@@ -56,13 +56,13 @@ const Footer = () => {
               <li>
                 <a className="text-gray-400 hover:text-white">Fourth Link</a>
               </li>
-            </nav>
+            </ul>
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
               TRABAJA CON NOSOTROS
             </h2>
-            <nav className="list-none mb-10">
+            <ul className="list-none mb-10">
               <li>
                 <a className="text-gray-400 hover:text-white">First Link</a>
               </li>
@@ -75,13 +75,13 @@ const Footer = () => {
               <li>
                 <a className="text-gray-400 hover:text-white">Fourth Link</a>
               </li>
-            </nav>
+            </ul>
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
               ¿NECESITAS AYUDA?
             </h2>
-            <nav className="list-none mb-10">
+            <ul className="list-none mb-10">
               <li>
                 <a className="text-gray-400 hover:text-white">First Link</a>
               </li>
@@ -94,7 +94,7 @@ const Footer = () => {
               <li>
                 <a className="text-gray-400 hover:text-white">Fourth Link</a>
               </li>
-            </nav>
+            </ul>
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
