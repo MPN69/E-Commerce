@@ -13,13 +13,10 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) => {
 
   return (
     <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50">
-      {/* Fondo del modal */}
       <div
         onClick={onClose}
         className="absolute top-0 left-0 w-full h-full bg-soft-blue/75"
       ></div>
-
-      {/* Contenido del modal */}
       <div className="relative z-10 bg-white p-8 rounded-lg shadow-md flex flex-col w-1/2">
         <div className="grid grid-flow-row grid-cols-2 gap-8">
           <div className="justify-center items-center">
@@ -35,9 +32,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) => {
             <h3>Color: {product.color}</h3>
             <h3>Fecha de produccion: {product.createdAt}</h3>
             <h3>Precio: {product.price}</h3>
-            <h3 className="text-blue-400 cursor-pointer">
-              Marca: {product.producer}
-            </h3>
+            <a href="" className="text-blue-400">Marca: {product.producer}</a>
           </div>
         </div>
         <h1 className="text-center text-gray-400 font-mono text-lg my-4">
@@ -46,11 +41,8 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) => {
         <hr className="mb-6 w-9/12 self-center  rounded-full" />
         <div className="flex overflow-x-auto space-x-8 h-40">
           {products.map((product) => (
-            <div>
-              <div
-                key={product.id}
-                className="flex-none rounded-full w-28 h-28 bg-red-600 flex"
-              >
+            <div key={product.id}>
+              <div className="flex-none rounded-full w-28 h-28 bg-red-600 flex">
                 <img
                   className="flex self-center align-middle object-cover"
                   src={product.img}

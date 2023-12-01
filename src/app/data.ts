@@ -120,6 +120,7 @@ export const locations = [
     longitude: "0.67568",
   },
 ];
+
 // En tu archivo de datos (app/data.ts o similar)
 export interface Product {
   id: number;
@@ -130,4 +131,12 @@ export interface Product {
   price: string;
   createdAt?: string;
   inStock?: boolean;
+}
+
+export interface LocationClass{
+  id: string;
+  street: string;
+  number: string;
+  latitude: string;
+  longitude: string;
 }
